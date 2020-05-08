@@ -1,4 +1,82 @@
-h1,p,body{
-    background-color: aquamarine;
-    color: blue;
+/* .img{
+    padding: 4px 0px 7px 20px;
+    width: 16px;
+    height: 18px;
+} */
+*{
+    font-family: Calibri;
 }
+// Mixin itself
+@mixin clearfix() {
+  &:::before {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+
+// Usage as a mixin
+.element {
+  @include clearfix;
+}
+.header1{
+    background: #316DC3 !important;
+}
+li, ol{
+    list-style: none;
+}
+.para{
+    margin: 6px 0 0 0;
+    padding: 5px 0 0 0;
+}
+.donor{
+    font-size: 12px;
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+    display: flex;
+    color: #427900;
+    margin: 5px 0px 0px 0;
+}
+.donorB{
+
+}
+.saylanilogo{
+    width: 200px;
+    margin: 8px 0 0 107px;
+}
+.intropara{
+    padding-top: 20px;
+}
+.iconsize{
+    width: 45px;
+}
+.counter{
+    background: #316DC3;
+    color: white;
+}
+.shad{
+        box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.16);
+        padding: 30px;
+}
+.mbox{
+    padding: 12px;
+    font-size: larger;
+    font-weight: 700;
+    color: #316DC3;
+}
+.projbox{
+    margin: 15px;
+    border: 1px lightgray solid;
+    padding: 10px 0px 5px 10px;
+    background: #f7f8fa;
+}
+.projH4{
+    margin: 0px 0 0px 25px;
+    font-weight: 700;
+    color: #316DC3;
+}
+.gal{
+    width: 19%;
+    padding: 3px;
+}
+
